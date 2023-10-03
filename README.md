@@ -6,6 +6,8 @@ generating, and transforming Java class files.
 The example here shows how easy it is to use to create a 
 new class that prints "Hello World".
 
+https://github.com/mrjameshamilton/jep457-hello-world/blob/a1eeb73ea4f564985d6a84dfda790343b31821e1/Main.java#L12-L18
+
 # Building
 
 You'll need JDK 22 which is currently available as an early access version.
