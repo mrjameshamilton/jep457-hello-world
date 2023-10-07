@@ -10,10 +10,10 @@ import static jdk.internal.classfile.Classfile.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         Classfile.of().buildTo(Path.of("HelloWorld.class"), ClassDesc.of("HelloWorld"), classBuilder -> classBuilder
-          .withMethod("main", ofDescriptor("([Ljava/lang/String;)V"), ACC_PUBLIC | ACC_STATIC, methodBuilder -> methodBuilder.withCode(codeBuilder -> codeBuilder
+          .withMethodBody("main", ofDescriptor("([Ljava/lang/String;)V"), ACC_PUBLIC | ACC_STATIC, codeBuilder -> codeBuilder
             .getstatic(of("java.lang.System"), "out", of("java.io.PrintStream"))
             .ldc("Hello World")
             .invokevirtual(of("java.io.PrintStream"), "println", ofDescriptor("(Ljava/lang/Object;)V"))
-            .return_())));
+            .return_()));
     }
 }
