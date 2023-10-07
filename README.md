@@ -6,7 +6,7 @@ generating, and transforming Java class files.
 The example here shows how easy it is to use to create a 
 new class that prints "Hello World".
 
-https://github.com/mrjameshamilton/jep457-hello-world/blob/1987f534576f91ca5613aca3ef093de86f20d0f5/Main.java#L12-L17
+https://github.com/mrjameshamilton/jep457-hello-world/blob/887349f0daed09a6bdf98c4f5ecb67e2b39782c2/Main.java#L12-L17
 
 # Building
 
