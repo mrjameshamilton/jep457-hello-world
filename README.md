@@ -14,7 +14,7 @@ You'll need JDK 22 which is currently available as an early access version.
 The easiest way to install this is with [SDK man](https://sdkman.io/):
 
 ```shell
-sdk install java 22.ea.17-open
+sdk install java 22.ea.31-open
 ```
 
 If you have Java 22, you can then execute the `run.sh` script which will

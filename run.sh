@@ -7,12 +7,6 @@ if [[ "$JAVA_MAJOR_VERSION" -lt 22 ]]; then
   exit 1
 fi
 
-EXPORTS="--add-exports java.base/jdk.internal.classfile=ALL-UNNAMED \
-         --add-exports java.base/jdk.internal.classfile.attribute=ALL-UNNAMED \
-         --add-exports java.base/jdk.internal.classfile.constantpool=ALL-UNNAMED \
-         --add-exports java.base/jdk.internal.classfile.instruction=ALL-UNNAMED \
-         --add-exports java.base/jdk.internal.classfile.components=ALL-UNNAMED"
-
-javac $EXPORTS Main.java
-java $EXPORTS -cp . --enable-preview Main
+javac --release 22 --enable-preview Main.java
+java -cp . --enable-preview Main
 java HelloWorld
