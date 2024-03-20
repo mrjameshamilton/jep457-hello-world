@@ -10,11 +10,10 @@ https://github.com/mrjameshamilton/jep457-hello-world/blob/ea854cda0e058d728630a
 
 # Building
 
-You'll need JDK 22 which is currently available as an early access version.
-The easiest way to install this is with [SDK man](https://sdkman.io/):
+You'll need JDK 22 and easiest way to install this on Linux is with [SDK man](https://sdkman.io/):
 
 ```shell
-sdk install java 22.ea.31-open
+sdk install java 22-open
 ```
 
 If you have Java 22, you can then execute the `run.sh` script which will
