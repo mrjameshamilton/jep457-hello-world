@@ -1,6 +1,6 @@
-# JEP457 Hello World
+# Java Class-File API Hello World
 
-[JEP 457 Class-File API](https://openjdk.org/jeps/457) is a preview API to provide a standard API for parsing, 
+[JEP 484 Class-File API](https://openjdk.org/jeps/484) (previously [JEP 457](https://openjdk.org/jeps/484) and [JEP 466](https://openjdk.org/jeps/484)) is an API introduced in Java 24 to provide a standard API for parsing, 
 generating, and transforming Java class files.
 
 The example here shows how easy it is to use to create a 
@@ -10,18 +10,23 @@ https://github.com/mrjameshamilton/jep457-hello-world/blob/ea854cda0e058d728630a
 
 # Building
 
-You'll need JDK 22 and easiest way to install this on Linux is with [SDK man](https://sdkman.io/):
+You'll need JDK 24 and easiest way to install this on Linux is with [SDK man](https://sdkman.io/):
 
 ```shell
-sdk install java 22-open
+sdk install java 24.ea.36-open
 ```
 
-If you have Java 22, you can then execute the `run.sh` script which will
-compile and execute `Main.java`. `Main` will create a Java class `HelloWorld.class`
-which will then be executed.
+If you have Java 24, you can execute the `Main.java` file which will produce a new class file `HelloWorld.class`:
 
 ```shell
-$ ./run.sh
+$ java Main.java
+```
+
+You can then execute the `HelloWorld` class file:
+
+```shell
+$ java HelloWorld
+Hello World
 ```
 
 # Similar projects
